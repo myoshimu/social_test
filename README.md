@@ -10,14 +10,19 @@ Twitter API 経由で特定のハッシュタグを含むツイートを受け�
 
 
 ## 設定
-1. ``git clone https://github.com/myoshimu/social_test.git``
-2. ``npm install``
-3. https://apps.twitter.com/ で Twitter API キーを発行し .env ファイルに記述します。
-4. Big Query にデータセットとテーブル作成
+1. GCP コンソールで以下を有効にする
+ * Cloud Natural Language API
+ * BigQuery API
+
+2. ``git clone https://github.com/myoshimu/social_test.git``
+3. ``npm install``
+4. https://apps.twitter.com/ で Twitter API キーを発行し .env ファイルに記述します。
+5. Big Query にデータセットとテーブル作成
     * ``bq mk twitter``
     * ``bq mk --schema HashTag:STRING,Tweet:STRING,SentimentScore:FLOAT,SentimentMagnitude:FLOAT,InsertDate:STRING -t twitter.twitter_stream``
-5. .env ファイルの GCP プロジェクト ID を BigQuery のテーブルを含んでいるものに更新
-6. ``app.js`` のハッシュタグを変更
+6. .env ファイルの GCP プロジェクト ID を BigQuery のテーブルを含んでいるものに更新
+7. ``app.js`` のハッシュタグを変更
+
 
 ## アプリケーション実行
 VM もしくは AppEngine でそれぞれ以下のように起動してください。
