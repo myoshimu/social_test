@@ -11,8 +11,8 @@ Twitter API 経由で特定のハッシュタグを含むツイートを受け�
 
 ## 設定
 1. GCP コンソールで以下を有効にする
- * Cloud Natural Language API
- * BigQuery API
+    * Cloud Natural Language API
+    * BigQuery API
 
 2. ``git clone https://github.com/myoshimu/social_test.git``
 3. ``npm install``
