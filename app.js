@@ -12,10 +12,8 @@ const bigquery = BigQuery({
     projectId: process.env.GCP_PROJECT_ID
 });
 
-const hashtag = '#nba';
+const hashtag = process.env.HASHTAG;
 
-// TODO: Remove hard coding
-//
 var client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
     consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
