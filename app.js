@@ -40,8 +40,8 @@ client.stream('statuses/filter', {track: hashtag}, function(stream) {
             }
             // Insert the object into BQ
             bigquery
-            .dataset('twitter')
-            .table('twitter_stream')
+            .dataset(process.env.BQ_DATASET)
+            .table(process.env.BQ_TABLE)
             .insert(dataInserted)
         
         })
