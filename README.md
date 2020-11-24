@@ -1,7 +1,7 @@
 # Twitter 感情分析サンプル
 Google Cloud Platform の BigQuery, AppEngine, データポータル、Natural Language API を使ったソーシャル感情分析ダッシュボードのデモです。
-
 Twitter API 経由で特定のハッシュタグを含むツイートを受け取ると Natural Language API 経由で感情分析した結果を BigQuery にストリーミングします。
+詳細は[こちら](https://medium.com/google-cloud-jp/appengine-%E3%81%A8-nlp-api-%E3%81%A8-bigquery-%E3%81%A7-1-%E6%99%82%E9%96%93%E3%81%A7%E3%82%BD%E3%83%BC%E3%82%B7%E3%83%A3%E3%83%AB%E5%88%86%E6%9E%90%E3%83%80%E3%83%83%E3%82%B7%E3%83%A5%E3%83%9C%E3%83%BC%E3%83%89%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B-9b42f8f05f17)を参照ください。
 
 ## 事前準備
 * git のインストール - https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
